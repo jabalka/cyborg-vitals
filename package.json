@@ -1,7 +1,6 @@
 {
   "name": "cyborg-vitals",
   "version": "1.2.7",
-  "private": true,
   "description": "Windows Game Bar performance widget and guided source installer",
   "license": "MIT",
   "engines": {
