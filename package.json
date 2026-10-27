@@ -1,0 +1,51 @@
+{
+  "name": "cyborg-vitals",
+  "version": "1.2.7",
+  "private": true,
+  "description": "Windows Game Bar performance widget and guided source installer",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "cyborg-vitals": "bin/cli.cjs"
+  },
+  "scripts": {
+    "setup": "node bin/cli.cjs install",
+    "doctor": "node bin/cli.cjs doctor",
+    "test": "node --test Tests/cli.test.cjs",
+    "pack:check": "npm pack --dry-run"
+  },
+  "files": [
+    "bin/*.cjs",
+    "Widget/*.cs",
+    "Widget/*.xaml",
+    "Widget/*.csproj",
+    "Widget/*.appxmanifest",
+    "Widget/Assets/",
+    "Widget/Bridge/",
+    "Widget/GameBar/",
+    "Widget/Properties/",
+    "Collector/*.cs",
+    "Collector/*.csproj",
+    "Collector/*.manifest",
+    "Shared/*.cs",
+    "Installer/*.cs",
+    "Installer/*.csproj",
+    "Installer/*.manifest",
+    "Tests/*.cs",
+    "Tests/*.csproj",
+    "Tests/*.cjs",
+    "Tests/*.ps1",
+    "*.ps1",
+    "*.md",
+    "*.config",
+    "Setup.exe",
+    "LICENSE",
+    ".vsconfig",
+    "Launcher/*.cs",
+    "Launcher/*.manifest",
+    "Installer/*.ico",
+    "*.sln"
+  ]
+}

@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>CyborgVitals.Collector</AssemblyName>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <PublishSingleFile>false</PublishSingleFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\Shared\MonitorDemand.cs" Link="MonitorDemand.cs" />
+    <PackageReference Include="LibreHardwareMonitorLib" Version="0.9.6" />
+    <PackageReference Include="System.Management" Version="10.0.2" />
+  </ItemGroup>
+</Project>

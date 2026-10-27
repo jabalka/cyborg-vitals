@@ -1,0 +1,13 @@
+**/bin/**
+**/obj/**
+**/dist/**
+!bin/
+!bin/*.cjs
+**/node_modules/**
+**/*.user
+**/*.suo
+**/*.pfx
+**/*.cer
+**/*.log
+*.tgz
+*.zip
