@@ -2,7 +2,7 @@
 
 Compact, pinnable Windows Game Bar widget for CPU/RAM usage, CPU/GPU temperatures, GPU usage and available fan RPM. Version **1.2.0.7** of the Windows widget is distributed by npm package **1.2.7**.
 
-**Current distribution: complete source plus a guided local build.** Installing through npm simplifies downloading and setup; it does not remove the Visual Studio/UWP build requirements. This package has not been published to npm or uploaded to GitHub yet. The GitHub commands below become usable after you upload it to your own repository. Replace `YOUR_USERNAME` with your GitHub username.
+**Current distribution: complete source plus a guided local build.** Installing through npm simplifies downloading and setup; it does not remove the Visual Studio/UWP build requirements. 
 
 ## 1. Requirements on each PC
 
