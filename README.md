@@ -2,7 +2,7 @@
 
 A compact, pinnable **Xbox Game Bar widget for Windows 11**. Keep CPU/RAM usage, CPU/GPU temperatures, GPU usage and supported fan speeds visible while you work or play.
 
-**Stable npm release: [`cyborg-vitals@1.2.7`](https://www.npmjs.com/package/cyborg-vitals/v/1.2.7)** · **Windows widget version: `1.2.0.7`**
+**Stable npm release: [`cyborg-vitals@1.2.8`](https://www.npmjs.com/package/cyborg-vitals/v/1.2.8)** · **Windows widget version: `1.2.0.8`**
 
 This release runs through **Win+G**. It includes the widget source, a background sensor reader and a guided Windows installer. Installation builds the application locally, so **Visual Studio UWP tools, a Windows SDK and a .NET SDK are still required on each destination PC**. This is not a prebuilt Windows installer release.
 
@@ -11,7 +11,7 @@ This release runs through **Win+G**. It includes the widget source, a background
 Install [Node.js with npm](https://nodejs.org/en/download), using a supported LTS release. Open **Command Prompt** as the Windows user who will use the widget, then run:
 
 ```cmd
-npm install --global cyborg-vitals@1.2.7
+npm install --global cyborg-vitals@1.2.8
 cyborg-vitals install
 ```
 
@@ -20,7 +20,7 @@ The version is pinned to the stable release documented here. Git, a GitHub downl
 For a one-command setup without retaining a global CLI installation:
 
 ```cmd
-npx cyborg-vitals@1.2.7 install
+npx cyborg-vitals@1.2.8 install
 ```
 
 The installer checks existing tools and offers missing prerequisites. Installing the npm package alone does not build or register the Windows widget; `cyborg-vitals install` performs that step. There are no install/postinstall hooks that silently run Windows setup.
@@ -89,7 +89,7 @@ A runtime alone cannot build the reader. After a successful installation, the pu
 
 ### Can other PCs skip the build tools?
 
-Not with the current `1.2.7` source distribution. That requires a separate release containing the compiled widget, compiled reader and a deployment installer. Normal packaged distribution also requires appropriate Windows package signing and trust. Publishing this source package to npm simplifies downloading, but does not turn it into that prebuilt distribution.
+Not with the current `1.2.8` source distribution. That requires a separate release containing the compiled widget, compiled reader and a deployment installer. Normal packaged distribution also requires appropriate Windows package signing and trust. Publishing this source package to npm simplifies downloading, but does not turn it into that prebuilt distribution.
 
 ## Configure the widget
 
@@ -144,7 +144,7 @@ The application reads monitoring data; it does not provide controls for fan curv
 
 ### Startup and saved layout
 
-Version `1.2.7` does not install a Windows service or sign-in startup task and does not automatically open the widget at Windows startup. Open it through **Win+G** and pin it. The widget saves its own display preferences; Game Bar manages the pin, screen position and restoration behaviour. Exact position restoration after a reboot is not guaranteed by this package.
+Version `1.2.8` does not install a Windows service or sign-in startup task and does not automatically open the widget at Windows startup. Open it through **Win+G** and pin it. The widget saves its own display preferences; Game Bar manages the pin, screen position and restoration behaviour. Exact position restoration after a reboot is not guaranteed by this package.
 
 Automatic **sensor-reader** launch when the widget requests hardware readings is separate from opening the widget at sign-in. Windows may still request administrator approval.
 
@@ -214,7 +214,7 @@ For a local npm tarball:
 
 ```cmd
 npm pack
-npm install --global .\cyborg-vitals-1.2.7.tgz
+npm install --global .\cyborg-vitals-1.2.8.tgz
 cyborg-vitals install
 ```
 
@@ -243,7 +243,7 @@ dotnet run --project .\Tests\MetricsChecks.csproj
 
 Additional fixture scripts in `Tests` cover prerequisite planning and package selection/extraction. See [VALIDATION.md](VALIDATION.md) for test history and Windows/hardware validation limits. Passing npm tests or creating a tarball does not establish successful Windows registration or compatibility with every sensor.
 
-The published npm release is **1.2.7**; the embedded Windows package uses the four-part version **1.2.0.7**. These are different version formats for the same release. Updating a README on GitHub does not replace the README already included in the published npm tarball.
+The published npm release is **1.2.8**; the embedded Windows package uses the four-part version **1.2.0.8**. These are different version formats for the same release. Updating a README on GitHub does not replace the README already included in the published npm tarball.
 
 ## License and acknowledgements
 
